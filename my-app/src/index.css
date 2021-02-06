@@ -5,6 +5,13 @@ body {
 
 #nav-bar {
   background-color:white;
-  border-bottom: none;
+  border-bottom: 2px solid black;
+  height: 8.5vh !important;
+}
+
+#nav-button {
+  outline:none;
+  border:none;
+  background:none;
 }
 

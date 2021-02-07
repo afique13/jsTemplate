@@ -6,12 +6,15 @@ body {
 #nav-bar {
   background-color:white;
   border-bottom: 2px solid black;
-  height: 8.5vh !important;
+  padding: 0.5% 4%;
 }
 
 #nav-button {
+  padding: 0;
   outline:none;
-  border:none;
   background:none;
+  border: none;
+  margin-left: 1%;
 }
+
 

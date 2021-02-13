@@ -5,20 +5,63 @@
         <title>Index</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
-        <nav id="nav-bar" class="navbar navbar-inverse navbar-static-top navbar-fixed-top">
-            <div class="container-fluid">
-                <button id="nav-button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
-                    <img style="max-width:75%;height:50px;" src="Images/588a6507d06f6719692a2d15.png" alt="menu">
-                </button>
-            </div>
-        </nav>
 
+    <nav id="nav-bar" class="navbar navbar-light bg-light sticky-top">
+        <button id="link-1" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <form id="form-nav" style="padding: 0.5% 0%;" class="form-inline my-2 my-lg-0">
+            <input class="form-control form-control-sm mr-sm-2 no-border" type="search" placeholder="" aria-label="Search">
+            <button id="button-form" class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="dropdown-nav" class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Consumer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Driver</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Merchant</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" 
+                    aria-expanded="false">Be Our Partner
+                    </a>
+                <div id="nav-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Grab Driver</a>
+                    <a class="dropdown-item" href="#">Grab Delivery Partner</a>
+                </div>
+                </li>
+            </ul>
+        <form id="form-nav" style="padding: 0.5% 0%;" class="form-inline my-2 my-lg-0">
+            <input class="form-control form-control-sm mr-sm-2 no-border" type="search" placeholder="" aria-label="Search">
+            <button id="button-form" class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+        </div>
+    </nav>
+
+    <div class="background">
+        <h4>Times are hard but we are still a few clicks away from serving you</h4>
+    </div>
         
     </body>
 </html>

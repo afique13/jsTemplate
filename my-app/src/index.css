@@ -4,17 +4,57 @@ body {
 }
 
 #nav-bar {
-  background-color:white;
-  border-bottom: 2px solid black;
+  background-color: white !important;
   padding: 0.5% 4%;
+  font-family: Verdana, Arial, Tahoma, Serif;
 }
 
-#nav-button {
-  padding: 0;
-  outline:none;
-  background:none;
+#button-form {
   border: none;
-  margin-left: 1%;
 }
 
+#link-1 {
+  color: black;
+  border: none;
+  font-size: 1.5em;
+}
+#link-1:active, #link-1:focus, #link-1:visited{
+  text-decoration: none;
+  background-color: transparent !important;
+}
 
+#dropdown-nav>li {
+  color: black;
+}
+#dropdown-nav>li>a{
+  color: black;
+}
+#dropdown-nav>li>a:hover:last-child{
+    background-color: transparent;
+    border-bottom: 2px solid rgb(50, 196, 62)
+}
+
+#nav-dropdown {
+  background: transparent !important;
+  border: none;
+}
+#nav-dropdown>a {
+  padding: 0.75%;
+}
+#nav-dropdown>a:hover {
+  background-color: transparent;
+  border-bottom: 2px solid rgb(50, 196, 62)
+}
+
+div.background {
+  background-color:rgb(50, 196, 62);
+}
+div.background>h4 {
+  color: white;
+  padding-top:7%;
+  padding-left:7.5%;
+  padding-right:25%;
+  padding-bottom:20%;
+  font-size: 5.5vw;
+  word-spacing: 0.005em;
+}

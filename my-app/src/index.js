@@ -2,12 +2,19 @@
 
 const mediaQuery = window.matchMedia('(max-width: 768px)');
 
-mediaQuery.addListener(mediaChange);
+mediaQuery.addEventListener("change", (e) => {
+    if(e.matches) {
+        document.querySelector('#form-nav').style.display = 'none';
+        document.querySelector('#form-collapse').style.display = 'block';
+    }else {
+        document.querySelector('#form-nav').style.display = 'block';
+        document.querySelector('#form-collapse').style.display = 'none';
+    }
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector("#link-1").onclick = changeClass;
 
-    mediaChange(mediaQuery);
 });
 
 function changeClass (){
@@ -20,16 +27,7 @@ function changeClass (){
     }
 }
 
-function mediaChange (e) {
-    console.log('5');
-    if(e.matches) {
-        document.querySelector('#form-nav').style.display = 'none';
-        document.querySelector('#form-collapse').style.display = 'block';
-    }else {
-        document.querySelector('#form-nav').style.display = 'block';
-        document.querySelector('#form-collapse').style.display = 'none';
-    }
-}
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -62,3 +62,10 @@ div.background>h4 {
   font-size: 5.5vw;
   word-spacing: 0.005em;
 }
+
+#animated-card {
+  padding: 5%;
+}
+#animated-card>.card {
+  margin: 0.5%;
+}

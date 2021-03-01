@@ -1,8 +1,9 @@
 
 
-const mediaQuery = window.matchMedia('(max-width: 768px)');
+const mediaQuery1 = window.matchMedia('(max-width: 768px)');
+const mediaQuery2 = window.matchMedia('(min-width: 768px)');
 
-mediaQuery.addEventListener("change", (e) => {
+mediaQuery1.addEventListener("change", (e) => {
     if(e.matches) {
         document.querySelector('#form-nav').style.display = 'none';
         document.querySelector('#form-collapse').style.display = 'block';
@@ -13,9 +14,21 @@ mediaQuery.addEventListener("change", (e) => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+    
+    setMediaScreen(mediaQuery2);
     document.querySelector("#link-1").onclick = changeClass;
-
+    
 });
+
+function setMediaScreen(e) {
+    if(e.matches) {
+        document.querySelector('#form-nav').style.display = 'block';
+        document.querySelector('#form-collapse').style.display = 'none';
+    }else {
+        document.querySelector('#form-nav').style.display = 'none';
+        document.querySelector('#form-collapse').style.display = 'block';
+    }
+}
 
 function changeClass (){
     const flag = document.querySelector("#react-icon").classList.item(1);

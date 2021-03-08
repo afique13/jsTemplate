@@ -20,6 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
     
 });
 
+window.addEventListener('scroll', () => {
+    let y = 1 + (window.scrollY || window.pageYOffset)/150;
+    y = y < 1 ? 1 : y; 
+    const [ r, g, b] = [255/y, 255/y, 255/y].map(Math.round);
+    document.querySelector("background").style.backgroundColor = 'rgb(${r}, %{g}, %{b})';
+});
+
 function setMediaScreen(e) {
     if(e.matches) {
         document.querySelector('#form-nav').style.display = 'block';

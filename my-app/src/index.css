@@ -59,7 +59,7 @@ div.background>h4 {
   padding-left:7.5%;
   padding-right:25%;
   padding-bottom:20%;
-  font-size: 5.5vw;
+  font-size: 6.5vw;
   word-spacing: 0.005em;
 }
 
@@ -67,5 +67,25 @@ div.background>h4 {
   padding: 5%;
 }
 #animated-card>.card {
-  margin: 0.5%;
+  margin: 0.5% 0.5%;
+  min-width: 18rem;
+  max-width: 23rem;
+  max-height: 24rem;
+  opacity: 0;
+  animation-name: SlideUp;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-timing-function: ease;
+}
+
+@keyframes SlideUp {
+  0% {
+    transform: translateY(20vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

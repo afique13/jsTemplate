@@ -66,8 +66,8 @@ div.background>h4 {
 #animated-card {
   padding: 5%;
 }
-#animated-card>.card {
-  margin: 0.5% 0.5%;
+#animate1 {
+  margin: 0.10% 0.25%;
   min-width: 18rem;
   max-width: 23rem;
   max-height: 24rem;
@@ -75,17 +75,65 @@ div.background>h4 {
   animation-name: SlideUp;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
-  animation-delay: 2s;
   animation-timing-function: ease;
+  animation-play-state: paused;
+}
+#animate2 {
+  margin: 0.10% 0.25%;
+  min-width: 18rem;
+  max-width: 23rem;
+  max-height: 24rem;
+  opacity: 0;
+  animation-name: SlideUp;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-play-state: paused;
+}
+#animate3 {
+  margin: 0.10% 0.25%;
+  min-width: 18rem;
+  max-width: 23rem;
+  max-height: 24rem;
+  opacity: 0;
+  animation-name: SlideUp;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-play-state: paused;
+}
+#animate4 {
+  margin: 0.10% 0.25%;
+  min-width: 18rem;
+  max-width: 23rem;
+  max-height: 24rem;
+  opacity: 0;
+  animation-name: SlideUp;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-play-state: paused;
+}
+#animate5 {
+  margin: 0.10% 0.25%;
+  min-width: 18rem;
+  max-width: 23rem;
+  max-height: 24rem;
+  opacity: 0;
+  animation-name: SlideUp;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  animation-play-state: paused;
 }
 
 @keyframes SlideUp {
   0% {
-    transform: translateY(20vw);
+    transform: translateY(25vw);
     opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }

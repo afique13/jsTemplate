@@ -20,11 +20,18 @@ document.addEventListener('DOMContentLoaded', () => {
     
 });
 
+const scrollvalue = document.querySelector('#animated-card>.card');
+console.log(scrollvalue.offsetTop);
+
 window.addEventListener('scroll', () => {
-    let y = 1 + (window.scrollY || window.pageYOffset)/150;
-    y = y < 1 ? 1 : y; 
-    const [ r, g, b] = [255/y, 255/y, 255/y].map(Math.round);
-    document.querySelector("background").style.backgroundColor = 'rgb(${r}, %{g}, %{b})';
+    if(window.scrollY > (scrollvalue.offsetTop-(window.scrollY/2.5))) {
+        console.log('fuck');
+        document.querySelector('#animate1').style.animationPlayState = 'running';
+        document.querySelector('#animate2').style.animationPlayState = 'running';
+        document.querySelector('#animate3').style.animationPlayState = 'running';
+        document.querySelector('#animate4').style.animationPlayState = 'running';
+        document.querySelector('#animate5').style.animationPlayState = 'running';
+    }
 });
 
 function setMediaScreen(e) {

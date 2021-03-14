@@ -85,6 +85,7 @@ div.background>h4 {
   max-height: 24rem;
   opacity: 0;
   animation-name: SlideUp;
+  animation-delay: 0.1s;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
@@ -98,6 +99,7 @@ div.background>h4 {
   opacity: 0;
   animation-name: SlideUp;
   animation-duration: 1.5s;
+  animation-delay: 0.2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
   animation-play-state: paused;
@@ -110,6 +112,7 @@ div.background>h4 {
   opacity: 0;
   animation-name: SlideUp;
   animation-duration: 1.5s;
+  animation-delay: 0.3s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
   animation-play-state: paused;
@@ -122,6 +125,7 @@ div.background>h4 {
   opacity: 0;
   animation-name: SlideUp;
   animation-duration: 1.5s;
+  animation-delay: 0.4s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
   animation-play-state: paused;

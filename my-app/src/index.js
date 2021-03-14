@@ -25,7 +25,6 @@ console.log(scrollvalue.offsetTop);
 
 window.addEventListener('scroll', () => {
     if(window.scrollY > (scrollvalue.offsetTop-(window.scrollY/2.5))) {
-        console.log('fuck');
         document.querySelector('#animate1').style.animationPlayState = 'running';
         document.querySelector('#animate2').style.animationPlayState = 'running';
         document.querySelector('#animate3').style.animationPlayState = 'running';

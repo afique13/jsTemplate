@@ -58,13 +58,16 @@ div.background>h4 {
   padding-top:7%;
   padding-left:7.5%;
   padding-right:25%;
-  padding-bottom:20%;
+  padding-bottom:10%;
   font-size: 6.5vw;
   word-spacing: 0.005em;
 }
 
 #animated-card {
   padding: 5%;
+}
+#animated-card>.card:hover {
+  border-bottom: 4px solid rgb(151, 250, 3);
 }
 #animate1 {
   margin: 0.10% 0.25%;
@@ -140,4 +143,38 @@ div.background>h4 {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+div.bg-below {
+  padding: 3% 7.5%;
+  margin: 4.5% 0;
+}
+div.bg-below>p:hover {
+  text-decoration: underline;
+}
+
+#footer {
+  background-color: rgb(50, 196, 62);
+  color: white;
+}
+#upper-footer{
+  padding: 3% 5%;
+}
+#footer-below {
+  background-color: rgb(92, 85, 85);
+}
+#list>li>a {
+  color: white;
+}
+
+#contact-nav {
+  margin-bottom: 7.5%;
+}
+#contact-nav>h2 {
+  margin-left: 7.5%;
+  font-size:xx-large;
+}
+#icon-nav {
+  color: rgb(228, 224, 26);
+  font-size: 3em;
 }

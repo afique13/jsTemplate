@@ -7,9 +7,11 @@ mediaQuery1.addEventListener("change", (e) => {
     if(e.matches) {
         document.querySelector('#form-nav').style.display = 'none';
         document.querySelector('#form-collapse').style.display = 'block';
+        document.querySelector('#icon-nav').style.marginLeft = '8.5%';
     }else {
         document.querySelector('#form-nav').style.display = 'block';
         document.querySelector('#form-collapse').style.display = 'none';
+        document.querySelector('#icon-nav').style.marginLeft = '0';
     }
 });
 
@@ -37,9 +39,11 @@ function setMediaScreen(e) {
     if(e.matches) {
         document.querySelector('#form-nav').style.display = 'block';
         document.querySelector('#form-collapse').style.display = 'none';
+        document.querySelector('#icon-nav').style.marginLeft = '0';
     }else {
         document.querySelector('#form-nav').style.display = 'none';
         document.querySelector('#form-collapse').style.display = 'block';
+        document.querySelector('#icon-nav').style.marginLeft = '8.5%';
     }
 }
 
